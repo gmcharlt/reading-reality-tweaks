@@ -28,3 +28,21 @@ if ( !defined( 'FUNC_PLUGIN_URL' ) ) {
  * ---------------------------------- */
 
 // include( FUNC_PLUGIN_DIR . 'includes/filename.php' );
+
+/*
+Set SOUP's search filter to show draft and scheduled posts
+in the blog hop, blog tour, and giveaways categories.
+*/
+$today = getdate();
+function limit_soup( $args ) {
+    $args['post_status'] = array('draft', 'future');
+    $args['cat'] = array(
+                        '196', # blog tours
+                        '569', # blog hops
+                        '570'  # giveaways
+                   );
+    $args['date_query'] = array('after' => 'today');
+    return $args;
+}
+
+add_filter( 'soup_query', 'limit_soup' );
