@@ -5,3 +5,8 @@ This is "[functionality plugin](http://www.doitwithwp.com/putting-things-where-t
 
 This plugin is based on the [Functionality Plugin Template](https://github.com/theukedge/functionality-plugin).
 
+## Installation
+
+To install the plugin from a local Git checkout, I do:
+
+`git archive --prefix /path/to/wp-content/plugins/reading-reality-tweaks/ HEAD|tar Pxvf -`
