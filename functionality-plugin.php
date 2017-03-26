@@ -1,10 +1,10 @@
 <?php
 
 /*
-Plugin Name: Functionality Plugin
-Plugin URI: http://www.doitwithwp.com/putting-things-where-they-belong/
-Description: Where all custom functionality that affects the site belongs
-Author: Dave Clements
+Plugin Name: Reading Reality Tweeks
+Plugin URI: https://github.com/gmcharlt/reading-reality-tweaks
+Description: Functionality tweaks for the Reading Reality website
+Author: Galen Charlton based on work by Dave Clements
 Author URI: https://www.theukedge.com
 Version: 1.0.0
 License: GPL-2.0+
